@@ -1,5 +1,6 @@
 Package: r4ds.book
 Title: R for Data Science
+Description: The r4ds book being sent to Travis for testing and deployment.
 Version: 0.1
 Authors@R: c(
   person("Hadley", "Wickham", , "hadley@rstudio.com", c("aut", "cre")),

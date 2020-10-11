@@ -146,3 +146,12 @@ echo "Will start copying output files to share folder ..."
 cp -avr public/ ../../share/
 ```
 
+## Errors
+
+```
+* checking for file ‘r4ds.book/DESCRIPTION’ ... ERROR
+
+Required fields missing or empty:
+
+  ‘License’ ‘Description’ ‘Author’ ‘Maintainer’
+```  

@@ -17,11 +17,10 @@ cache:
   directories:
     - $HOME/bin
 
-
-
 before_install:
     - "docker pull rocker/verse:3.6.3"
     - sudo apt-get --yes --force-yes update -qq
 
-r_packages:
-    - bookdown
+# do not install any R packages
+    # r_packages:
+#     - bookdown

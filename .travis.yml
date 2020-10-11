@@ -1,6 +1,9 @@
+sudo: required
+
+services:
+    - docker
+
 language: r
-dist: xenial
-latex: false
 
 r:
     - 3.6.3
@@ -10,6 +13,15 @@ branches:
     - main
 
 cache:
-  packages: yes
+  packages: true
   directories:
     - $HOME/bin
+
+
+
+before_install:
+    - "docker pull rocker/verse:3.6.3"
+    - sudo apt-get --yes --force-yes update -qq
+
+r_packages:
+    - bookdown

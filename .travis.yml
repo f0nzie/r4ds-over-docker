@@ -2,6 +2,9 @@ language: r
 dist: xenial
 latex: false
 
+r:
+    - 3.6.3
+
 branches:
   only:
     - main

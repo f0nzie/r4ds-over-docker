@@ -1,6 +1,11 @@
 Package: r4ds.book
 Title: R for Data Science
 Version: 0.1
+Authors@R: c(
+  person("Hadley", "Wickham", , "hadley@rstudio.com", c("aut", "cre")),
+  person("Garrett", "Grolemund", , "garrett@rstudio.com", "aut")
+  )
+License: GPL-2  
 Imports: 
   nycflights13,
   readr,

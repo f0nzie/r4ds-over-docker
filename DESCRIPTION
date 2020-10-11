@@ -1,0 +1,38 @@
+Package: r4ds.book
+Title: R for Data Science
+Version: 0.1
+Imports: 
+  nycflights13,
+  readr,
+  dplyr,
+  htmlwidgets,
+  shiny,
+  modelr,
+  tidyverse,
+  lubridate,
+  splines,
+  ggplot2,
+  forcats,
+  magrittr,
+  broom,
+  tidyr,
+  purrr,
+  hms,
+  feather,
+  stringr,
+  mgcv,
+  microbenchmark,
+  Lahman,
+  devtools,
+  pkgload,
+  maps,
+  pryr,
+  gapminder,
+  leaflet,
+  plotly,
+  flexdashboard,
+  ggrepel
+
+
+
+  

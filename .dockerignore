@@ -1,0 +1,11 @@
+book/.Rproj.user
+book/.Rhistory
+book/.RData
+book/.Ruserdata
+book/cache/*
+book/_bookdown_files/*
+book/_book
+book/public
+Dockerfile
+share
+Dockerfile

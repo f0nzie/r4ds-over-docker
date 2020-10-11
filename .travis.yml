@@ -1,0 +1,12 @@
+language: r
+dist: xenial
+latex: false
+
+branches:
+  only:
+    - main
+
+cache:
+  packages: yes
+  directories:
+    - $HOME/bin

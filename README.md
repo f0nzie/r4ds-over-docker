@@ -82,7 +82,7 @@ What the **Dockerfile** does:
 
 <img src="assets/README/image-20201011114547457.png" alt="image-20201011114547457" style="zoom:80%;" />
 
-This is how it looks at the end of the Docker build process. The last Docker operation is copying the script `copy_gitbook.sh`.
+*Figure:* This is how it looks at the end of the Docker build process. The last Docker operation is copying the script `copy_gitbook.sh`.
 
 
 

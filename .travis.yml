@@ -1,5 +1,7 @@
 sudo: required
 
+warnings_are_errors: false
+
 services:
     - docker
 

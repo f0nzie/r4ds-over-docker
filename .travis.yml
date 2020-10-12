@@ -14,13 +14,24 @@ branches:
   only:
     - main
 
+# https://pat-s.me/post/using-ccache-to-speed-up-r-package-checks-on-travis-ci/
 cache:
-  packages: true
-  directories:
-    - $HOME/bin
+  - $HOME/.ccache
+
+addons:
+  apt:
+    packages:
+     - ccache
+
+# cache:
+#   packages: true
+#   directories:
+#     - $HOME/bin
 
 before_install:
-    - "docker pull rocker/verse:3.6.3"
+    - mkdir $HOME/.R && echo -e 'CXX_STD = CXX14\n\nVER=\nCCACHE=ccache\nCC=$(CCACHE) gcc$(VER) -std=gnu99\nCXX=$(CCACHE) g++$(VER)\nC11=$(CCACHE) g++$(VER)\nC14=$(CCACHE) g++$(VER)\nFC=$(CCACHE) gfortran$(VER)\nF77=$(CCACHE) gfortran$(VER)' > $HOME/.R/Makevars
+    - echo -e 'max_size = 5.0G\nsloppiness = include_file_ctime\nhash_dir=false' > $HOME/.ccache/ccache.conf
+    # - "docker pull rocker/verse:3.6.3"
     - sudo apt-get --yes --force-yes update -qq
 
 # do not install any R packages
